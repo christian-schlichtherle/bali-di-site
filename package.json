@@ -1,6 +1,6 @@
 {
-  "name": "Bali DI",
-  "version": "0.0.1",
+  "name": "bali-di-site",
+  "version": "0.1.0-SNAPSHOT",
   "description": "The online documentation for Bali DI, which offers compile-time dependency injection for Java and Scala.",
   "main": "index.js",
   "authors": {

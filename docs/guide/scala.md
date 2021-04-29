@@ -43,8 +43,8 @@ You can browse the source code
 [here](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample)
 or clone this project.
 
-The module is organized into different files with each file representing an individual, self-contained showcase.
-For example, the file
-[`GreetingModule.scala`](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample/GreetingModule.scala)
+The module is organized into different packages with each package representing an individual, self-contained showcase.
+For example, the package
+[`bali.scala.sample.greeting`](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample/greeting)
 showcases a glorified way to produce a simple "Hello world!" message by using different components with dependency
 injection.

@@ -4,5 +4,11 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
+div[class ~= language-scala]:before
+  content: "scala"
+
+.theme-code-group div:before
+  content: ""
+
 .home .hero img
   max-width 450px!important
