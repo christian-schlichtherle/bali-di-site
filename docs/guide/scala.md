@@ -32,3 +32,19 @@ libraryDependencies += "global.namespace.bali" %% "bali-scala" % "0.4.5" % Provi
 ```
 
 Note that this is a compile-time-only dependency - there is no runtime dependency of your code on Bali DI for Scala!
+
+## Sample Code
+
+This project uses a modular build.
+The module [`bali-scala-sample`](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample)
+provides lots of sample code showing how to use the annotations and generated source code.
+The module is not published on Maven Central however - it is only available as source code.
+You can browse the source code
+[here](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample)
+or clone this project.
+
+The module is organized into different files with each file representing an individual, self-contained showcase.
+For example, the file
+[`GreetingModule.scala`](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample/GreetingModule.scala)
+showcases a glorified way to produce a simple "Hello world!" message by using different components with dependency
+injection.
