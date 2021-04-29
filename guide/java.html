@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-    <link rel="preload" href="/assets/css/0.styles.2190a5e0.css" as="style"><link rel="preload" href="/assets/js/app.4ce4dc9e.js" as="script"><link rel="preload" href="/assets/js/2.ed9ffc29.js" as="script"><link rel="preload" href="/assets/js/7.863ebc25.js" as="script"><link rel="prefetch" href="/assets/js/10.cff065f5.js"><link rel="prefetch" href="/assets/js/3.3fa906df.js"><link rel="prefetch" href="/assets/js/4.98071330.js"><link rel="prefetch" href="/assets/js/5.70478784.js"><link rel="prefetch" href="/assets/js/6.1bbdcba2.js"><link rel="prefetch" href="/assets/js/8.bfee4b2b.js"><link rel="prefetch" href="/assets/js/9.80d636c5.js">
+    <link rel="preload" href="/assets/css/0.styles.2190a5e0.css" as="style"><link rel="preload" href="/assets/js/app.39149627.js" as="script"><link rel="preload" href="/assets/js/2.ed9ffc29.js" as="script"><link rel="preload" href="/assets/js/7.e1d3086b.js" as="script"><link rel="prefetch" href="/assets/js/10.cff065f5.js"><link rel="prefetch" href="/assets/js/3.3fa906df.js"><link rel="prefetch" href="/assets/js/4.98071330.js"><link rel="prefetch" href="/assets/js/5.70478784.js"><link rel="prefetch" href="/assets/js/6.1bbdcba2.js"><link rel="prefetch" href="/assets/js/8.bfee4b2b.js"><link rel="prefetch" href="/assets/js/9.26b482e2.js">
     <link rel="stylesheet" href="/assets/css/0.styles.2190a5e0.css">
   </head>
   <body>
@@ -46,7 +46,7 @@ provides lots of sample code showing how to use the annotations and generated so
 The module is not published on Maven Central however - it is only available as source code.
 You can browse the source code
 <a href="https://github.com/christian-schlichtherle/bali-di-java/tree/main/java-sample/src/main/java/bali/java/sample" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
-or clone this project.</p> <p>The module is organized into different packages with each package representing an individual, self-contained showcase.
+or clone this project.</p> <p>The module is split into different packages with each package representing an individual, self-contained showcase.
 For example, the package
 <a href="https://github.com/christian-schlichtherle/bali-di-java/tree/main/java-sample/src/main/java/bali/java/sample/greeting" target="_blank" rel="noopener noreferrer"><code>bali.java.sample.greeting</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
 showcases a glorified way to produce a simple &quot;Hello world!&quot; message by using different components with dependency
@@ -180,7 +180,7 @@ in dependencies in order to specify the name of a method, field or parameter in 
 dependency of the return value.</li> <li>When applying the <code>@Lookup</code> annotation to an abstract, parameterless method in a module interface, the method does not
 get implemented in the companion interface. To bind these dependencies, you can declare the module as a dependency in
 another module interface, allowing you to use <em>module composition</em> to structure a large multi-module app.</li> <li>Alternatively, you can extend one or more companion interface(s) in another module interface, allowing you to use
-<em>module inheritance</em> to structure a large multi-module app.</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/christian-schlichtherle/bali-di-site/edit/main/docs/guide/java.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/29/2021, 8:13:40 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+<em>module inheritance</em> to structure a large multi-module app.</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/christian-schlichtherle/bali-di-site/edit/main/docs/guide/java.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/29/2021, 8:16:00 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/guide/overview.html" class="prev">
         Overview
@@ -189,6 +189,6 @@ another module interface, allowing you to use <em>module composition</em> to str
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.4ce4dc9e.js" defer></script><script src="/assets/js/2.ed9ffc29.js" defer></script><script src="/assets/js/7.863ebc25.js" defer></script>
+    <script src="/assets/js/app.39149627.js" defer></script><script src="/assets/js/2.ed9ffc29.js" defer></script><script src="/assets/js/7.e1d3086b.js" defer></script>
   </body>
 </html>
