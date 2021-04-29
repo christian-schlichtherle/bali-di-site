@@ -14,6 +14,7 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
   ],
   themeConfig: {
+    docsBranch: 'main',
     docsDir: 'docs',
     docsRepo: 'christian-schlichtherle/bali-di-site',
     editLinks: true,
