@@ -49,7 +49,7 @@ You can browse the source code
 [here](https://github.com/christian-schlichtherle/bali-di-java/tree/main/java-sample/src/main/java/bali/java/sample)
 or clone this project.
 
-The module is organized into different packages with each package representing an individual, self-contained showcase.
+The module is split into different packages with each package representing an individual, self-contained showcase.
 For example, the package
 [`bali.java.sample.greeting`](https://github.com/christian-schlichtherle/bali-di-java/tree/main/java-sample/src/main/java/bali/java/sample/greeting)
 showcases a glorified way to produce a simple "Hello world!" message by using different components with dependency
