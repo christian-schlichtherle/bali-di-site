@@ -129,3 +129,10 @@ To resolve the aforementioned issues, Bali DI employs a new, completely differen
     There is no need for any IDE plugin to make it "understand" Bali DI.
 
     &nbsp;
+
+**Effectively eliminates `new`**
+
+:   The design of Bali DI is entirely based on the versatility and power of abstract types.
+    However, implementing abstract types manually is cumbersome and tedious.
+    Yet, this seeming disadvantage serves as a very effective deterrent to accidentally `new` an abstract type in your
+    code and thereby waiving the merits of dependency injection.

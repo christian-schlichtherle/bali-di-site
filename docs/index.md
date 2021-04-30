@@ -19,6 +19,8 @@ features:
   details: Bali DI is completely complementary to Spring, Guice, Macwire, CDI or any other JSR 330 implementation, so that you can use both in the same project.
 - title: No IDE plugin required
   details: The Java annotation processor emits formatted source code, so that you can easily inspect your dependency bindings and their caching.
+- title: Effectively eliminates `new`
+  details: Abstract types are versatile and powerful, but hard to implement manually. This is an effective deterrent to accidentally call `new` in your code.
 footer: Apache License, Version 2.0 | Copyright © Schlichtherle IT Services
 home: true
 tagline: Modern dependency injection with compile-time bindings and just-in-time resolution for Java and Scala.
