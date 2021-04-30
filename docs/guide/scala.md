@@ -266,7 +266,7 @@ val module = new WeatherStationModule {
 }
 ```
 
-Next, another round is started to recursively expand the generated `make[...]` calls:
+Next, another round is started to recursively expand the generated `make[...]` calls and form the final result:
 
 ```scala
 val module = new WeatherStationModule { context =>
@@ -289,6 +289,6 @@ val module = new WeatherStationModule { context =>
 }
 ```
 
-As you can easily see, Bali DI automates the generation of quite some boilerplate code for you, but there's way more to
-it than that.
+As you can see, Bali DI automates the generation of a lot of boilerplate code for you, but there's much more to it
+than just that.
 For a general discussion of its design concept, features and benefits please check the [Overview](overview.md) page.
