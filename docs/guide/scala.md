@@ -12,7 +12,7 @@ title: Scala Guide
 # Scala Guide
 
 Bali DI for Scala is a pure def macro which transforms the abstract syntax tree to automate dependency injection.
-It currently supports Scala 2.13, with Scala 3 on the roadmap.
+It currently supports Scala 2.12 and 2.13, with Scala 3 on the roadmap.
 
 This project is a sibling of [Bali DI for Java](java.md).
 As a sibling, it is based on the exact same concepts and aims for eventual feature parity.
