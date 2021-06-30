@@ -20,7 +20,7 @@ features:
 - title: No IDE plugin required
   details: The Java annotation processor emits formatted source code, so that you can easily inspect your dependency bindings and their caching.
 - title: Effectively eliminates `new`
-  details: The design is based on abstract types, which are hard to implement manually. This is an effective deterrent to accidentally `new` a dependency in your code.
+  details: The design is based on abstract types, which are hard to implement manually. This is an effective deterrent to accidentally call `new` on a dependency type.
 footer: Apache License, Version 2.0 | Copyright © Schlichtherle IT Services
 home: true
 tagline: Modern dependency injection with compile-time bindings and just-in-time resolution for Java and Scala.
