@@ -28,7 +28,7 @@ Bali DI for Scala is implemented as a def macro for the Scala compiler.
 If you use SBT, you need to add the following dependency to your project:
 
 ```sbt
-libraryDependencies += "global.namespace.bali" %% "bali-scala" % "0.4.5" % Provided
+libraryDependencies += "global.namespace.bali" %% "bali-scala" % "0.5.2" % Provided
 ```
 
 Note that this is a compile-time-only dependency - there is no runtime dependency of your code on Bali DI for Scala!
