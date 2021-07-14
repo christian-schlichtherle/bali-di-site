@@ -14,10 +14,10 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "vuepress": "^1.5.3"
+    "vuepress": "1.8.2"
   },
   "dependencies": {
-    "markdown-it-abbr": "^1.0.4",
-    "markdown-it-deflist": "^2.1.0"
+    "markdown-it-abbr": "1.0.4",
+    "markdown-it-deflist": "2.1.0"
   }
 }
