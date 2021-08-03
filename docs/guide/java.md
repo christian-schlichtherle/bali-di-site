@@ -32,7 +32,7 @@ If you use Maven, you need to add the following dependency to your project:
     <groupId>global.namespace.bali</groupId>
     <artifactId>bali-java</artifactId>
     <!-- see https://github.com/christian-schlichtherle/bali-di/releases/latest -->
-    <version>0.11.2</version>
+    <version>0.11.3</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -118,8 +118,8 @@ package bali.java.sample.genericclock;
 @bali.Generated(
         processor = "bali.java.AnnotationProcessor",
         round = 1,
-        timestamp = "2021-03-21T16:45:20.955+01:00",
-        version = "0.11.2"
+        timestamp = "2021-08-03T16:45:20.955+01:00",
+        version = "0.11.3"
 )
 public interface GenericClockApp$ extends GenericClockApp { // (1)
 
@@ -167,8 +167,8 @@ package bali.java.sample.genericclock;
 @bali.Generated(
         processor = "bali.java.AnnotationProcessor",
         round = 1,
-        timestamp = "2021-03-21T16:45:20.956+01:00",
-        version = "0.11.2"
+        timestamp = "2021-08-03T16:45:20.956+01:00",
+        version = "0.11.3"
 )
 public abstract class GenericClockApp$$ implements GenericClockApp$ {
 
