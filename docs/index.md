@@ -14,7 +14,7 @@ features:
 - title: Simple and scalable
   details: Dependencies are defined in module contexts or types. Module types can get composed into large systems by composition or inheritance. 
 - title: Supports Java and Scala
-  details: Bali DI is implemented as an annotation processor in Java and as a def macro in Scala. You can even use it in mixed Java/Scala projects.
+  details: Bali DI is implemented as an annotation processor in Java and as a def macro in Scala. You can even use it in mixed Java/Scala/Scala.js projects.
 - title: Mix & match with JSR 330
   details: Bali DI is completely complementary to Spring, Guice, Macwire, CDI or any other JSR 330 implementation, so that you can use both in the same project.
 - title: No IDE plugin required
@@ -23,5 +23,5 @@ features:
   details: The design is based on abstract types, which are hard to implement manually. This is an effective deterrent to accidentally `new` a dependency type.
 footer: Apache License, Version 2.0 | Copyright © Schlichtherle IT Services
 home: true
-tagline: Modern dependency injection with compile-time bindings and just-in-time resolution for Java and Scala.
+tagline: Modern compile-time dependency injection with just-in-time resolution for Java, Scala and Scala.js.
 ---
