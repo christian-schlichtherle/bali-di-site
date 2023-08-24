@@ -15,7 +15,7 @@ Bali DI for Scala is a pure def macro which transforms the abstract syntax tree 
 It currently supports Scala 2.12 and 2.13, with Scala 3 on the roadmap.
 
 This project is a sibling of [Bali DI for Java](java.md).
-As a sibling, it is based on the exact same concepts and aims for eventual feature parity.
+As a sibling, it is based on the exact same concepts and aims for feature parity.
 
 > Bali is also an [island](https://en.wikipedia.org/wiki/Bali) between Java and Lombok in Indonesia.
 > For disambiguation, the name of this project is "Bali DI", not just "Bali", where DI is an acronym for

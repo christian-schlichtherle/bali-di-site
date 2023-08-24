@@ -15,7 +15,7 @@ Bali DI for Java is a pure annotation processor which generates source code to a
 It supports any compiler which is compliant to Java 8 or later.
 
 This project is a sibling of [Bali DI for Scala](scala.md).
-As a sibling, it is based on the exact same concepts and aims for eventual feature parity.
+As a sibling, it is based on the exact same concepts and aims for feature parity.
 
 > Bali is also an [island](https://en.wikipedia.org/wiki/Bali) between Java and Lombok in Indonesia.
 > For disambiguation, the name of this project is "Bali DI", not just "Bali", where DI is an acronym for
