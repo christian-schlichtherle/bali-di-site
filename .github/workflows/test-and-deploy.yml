@@ -3,7 +3,7 @@
 jobs:
   test-and-deploy:
     if: "!contains(toJSON(github.event.commits.*.message), '[skip ci]')"
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
