@@ -32,7 +32,7 @@ If you use Maven, you need to add the following dependency to your project:
     <groupId>global.namespace.bali</groupId>
     <artifactId>bali-java</artifactId>
     <!-- see https://github.com/christian-schlichtherle/bali-di/releases/latest -->
-    <version>0.11.3</version>
+    <version>0.11.8</version>
     <scope>provided</scope>
 </dependency>
 ```
