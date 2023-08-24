@@ -6,7 +6,7 @@ features:
 - title: Compile-time bindings
   details: Dependency bindings are type-checked by the compiler and if any dependency is missing or incompatible, an error message is emitted.
 - title: Named dependencies
-  details: Dependencies are named, so that the compiler can always discern two dependencies named `foo` and `bar`, even if they have the same type.
+  details: Dependencies are named, so that the compiler can always discern two dependencies named <code>foo</code> and <code>bar</code>, even if they have the same type.
 - title: Just-in-time resolution
   details: Dependencies are created and (if desired) cached just-in-time by calling abstract methods, so that your application can startup quickly.
 - title: No runtime artifacts
