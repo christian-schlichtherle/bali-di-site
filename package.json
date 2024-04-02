@@ -1,20 +1,11 @@
 {
-  "name": "bali-di-site",
-  "version": "0.1.0-SNAPSHOT",
-  "description": "The online documentation for Bali DI, which offers compile-time dependency injection for Java and Scala.",
-  "main": "index.js",
-  "authors": {
-    "name": "Christian Schlichtherle"
-  },
-  "repository": "https://github.com/christian-schlichtherle/bali-di-site/Bali DI",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  },
-  "license": "Apache-2.0",
   "devDependencies": {
-    "markdown-it-abbr": "^1.0.4",
-    "markdown-it-deflist": "^2.1.0",
-    "vuepress": "^1.9.10"
-  }
+    "vitepress": "^1.0.1"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "type": "module"
 }

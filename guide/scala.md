@@ -1,15 +1,11 @@
----
-title: Scala Guide
----
-
-<div>
+<p>
     <a href="https://github.com/christian-schlichtherle/bali-di-scala/releases/latest"><img src="https://img.shields.io/github/release/christian-schlichtherle/bali-di-scala.svg" alt="Release Notes"></a>
     <a href="https://search.maven.org/artifact/global.namespace.bali/bali-scala_2.13"><img src="https://img.shields.io/maven-central/v/global.namespace.bali/bali-scala_2.13" alt="Maven Central"></a>
     <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/christian-schlichtherle/bali-di-scala.svg" alt="Apache License 2.0"></a>
     <a href="https://github.com/christian-schlichtherle/bali-di-scala/actions?query=workflow%3Atest"><img src="https://github.com/christian-schlichtherle/bali-di-scala/workflows/test/badge.svg" alt="Test Workflow"></a>
-</div>
+</p>
 
-# Scala Guide
+# Bali DI for Scala
 
 Bali DI for Scala is a pure def macro which transforms the abstract syntax tree to automate dependency injection.
 It currently supports Scala 2.12 and 2.13, with Scala 3 on the roadmap.
@@ -17,6 +13,7 @@ It currently supports Scala 2.12 and 2.13, with Scala 3 on the roadmap.
 This project is a sibling of [Bali DI for Java](java.md).
 As a sibling, it is based on the exact same concepts and aims for feature parity.
 
+> [!NOTE]
 > Bali is also an [island](https://en.wikipedia.org/wiki/Bali) between Java and Lombok in Indonesia.
 > For disambiguation, the name of this project is "Bali DI", not just "Bali", where DI is an acronym for
 > [_dependency injection_](https://en.wikipedia.org/wiki/Dependency_injection).
@@ -27,11 +24,12 @@ As a sibling, it is based on the exact same concepts and aims for feature parity
 Bali DI for Scala is implemented as a def macro for the Scala compiler.
 If you use SBT, you need to add the following dependency to your project:
 
-```sbt
+```scala
 libraryDependencies += "global.namespace.bali" %% "bali-scala" % "0.5.4" % Provided
 ```
 
-Note that this is a compile-time-only dependency - there is no runtime dependency of your code on Bali DI for Scala!
+> [!NOTE]
+> This is a compile-time-only dependency - there is no runtime dependency of your code on Bali DI for Scala!
 
 ## Sample Code
 
@@ -53,8 +51,9 @@ injection.
 
 ### WeatherStation
 
-> The source code shown in this section is available
-> [here](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample/weatherstation).
+> [!NOTE]
+> The source code shown in this section is available on
+> [GitHub](https://github.com/christian-schlichtherle/bali-di-scala/tree/main/scala-sample/src/main/scala/bali/scala/sample/weatherstation).
 
 Let's define our first component:
 
@@ -126,8 +125,9 @@ This component also has two dependencies:
 
 We want our weather station to return a fresh `Temperature` on each call, so `temp` is declared as a `def` again.
 
-> Note that the component trait `WeatherStation` reuses the component trait `Clock` by inheritance and the component
-> trait `Temperature` by composition:
+> [!NOTE]
+> The component trait `WeatherStation` reuses the component trait `Clock` by inheritance and the component trait
+> `Temperature` by composition:
 > There is no limitation on how you arrange component types into a larger dependency graph.
 > Because dependencies are resolved just-in-time, your dependency graph may even be circular!
 
@@ -148,7 +148,8 @@ final override lazy val value: Float = context.tempValue
 
 Note that the implementation respects the alias defined by the `@Lookup("tempValue")` annotation before.
 
-> Also, note that a dependency may have type parameters and parameter lists:
+> [!NOTE]
+> A dependency may have type parameters and parameter lists:
 > The parameter lists are also forwarded in this case - more on that later.
 
 In Scala, a module context is either:
@@ -181,8 +182,9 @@ val clock = new Clock {
 }
 ```
 
-> Note that if the type to make isn't abstract, then no anonymous inner class is created, and the default constructor is
-> called instead.
+> [!NOTE]
+> If the type to make isn't abstract, then no anonymous inner class is created, and the default constructor is called
+> instead.
 > So for example, a call to `make[Date]` simply gets expanded to `new Date`.
 
 With this in mind, let's look at the module type for our weather station: 
@@ -217,6 +219,7 @@ final override protected def now: Date = make[Date] // (2)
 
 The call to `make[Date]` is then recursively expanded to `new Date`.
 
+> [!NOTE]
 > Why is this a recursive call?
 > Because you need to call `make[WeatherStationModule]` in order to let it implement the method `now` in the first
 > place!
@@ -291,4 +294,4 @@ val module = new WeatherStationModule { context =>
 
 As you can see, Bali DI automates the generation of a lot of boilerplate code for you, but there's much more to it
 than just that.
-For a general discussion of its design concept, features and benefits please check the [Overview](overview.md) page.
+For a general discussion of its design concept, features and benefits please check the [Overview](introduction) page.
