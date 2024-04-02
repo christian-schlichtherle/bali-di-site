@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4 # https://github.com/actions/checkout
+        with:
+          lfs: true
       - uses: actions/setup-node@v4 # https://github.com/actions/setup-node
         with:
           node-version: '21.x'
