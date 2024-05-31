@@ -14,7 +14,7 @@ features:
   - title: Supports Java and Scala
     details: Bali DI is implemented as an annotation processor in Java and as a def macro in Scala. You can even use it in mixed Java/Scala/Scala.js projects.
   - title: Mix & match with JSR 330
-    details: Bali DI is completely complementary to Spring, Guice, Macwire, CDI or any other JSR 330 implementation, so that you can use both in the same project.
+    details: Bali DI is completely complementary to Spring, Guice, Macwire, CDI or any other JSR 330 implementation, so that you can use both technologies in the same project.
   - title: No IDE plugin required
     details: The Java annotation processor emits formatted source code, so that you can easily inspect your dependency bindings and their caching.
   - title: Effectively eliminates <code>new</code>
